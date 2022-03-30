@@ -198,6 +198,9 @@ nav .cart .profile img{
     width: 70px;
     /* height: 40px; */
 }
+.fill h2{
+    font-size: 20px;
+}
 .product_detail{
     display: flex;
     flex-direction: column;
