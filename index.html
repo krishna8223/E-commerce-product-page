@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="container">
+      <nav class="">
+        <div class="menus">
+          <img
+            src="./image/icon-menu.svg"
+            onclick="closeNav()"
+            class="hamburgur"
+            alt=""
+          />
+          <img src="./image/logo.svg" alt="logo" class="logo" />
+          <div class="links show_nav">
+            <img onclick="closeNav()" src="./image/icon-close.svg" alt="" />
+            <a href="">Collections</a>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart_item">
+            <img src="./image/icon-cart.svg" alt="" />
+            <div class="cart_items">
+              <h1>Cart</h1>
+              <div class="items">
+                <div class="empty">your cart is empty</div>
+                <div class="fill">
+                  <div>
+                    <img
+                      class="product_image"
+                      src="./image/image-product-1.jpg"
+                      alt=""
+                    />
+                    <div class="product_detail">
+                      <h2>Fall Lilited Edition Sneakers</h2>
+                      <p class="final_price">final price</p>
+                    </div>
+                    <img
+                      onclick="delete_cart()"
+                      src="./image/icon-delete.svg"
+                      alt=""
+                      class="delete"
+                    />
+                  </div>
+                  <button class="checkout">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./image/image-avatar.png" alt="" />
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="gallery">
+          <div class="main_image_box">
+            <div onclick="changeMainImage('prev')" class="change_icon prev">
+              <img class=" " src="./image/icon-previous.svg" alt="" />
+            </div>
+            <div onclick="changeMainImage('next')" class="change_icon next">
+              <img class=" " src="./image/icon-next.svg" alt="" />
+            </div>
+            <img src="./image/image-product-1.jpg" class="main_image" alt="" />
+          </div>
+          <div class="all_main_images">
+            <img class="active" src="./image/image-product-1.jpg " alt="" />
+            <img src="./image/image-product-2.jpg " alt="" />
+            <img src="./image/image-product-3.jpg " alt="" />
+            <img src="./image/image-product-4.jpg " alt="" />
+          </div>
+        </div>
+        <div class="detail">
+          <p class="company_name">Sneaker Company</p>
+          <h1 class="item_name">Fall Limited Edition Sneakers</h1>
+          <p class="item_detail">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole. they'll withstand everything the weather can offer.
+          </p>
+          <div class="rs">
+            <h2>$125.00 <sup>50%</sup></h2>
+            <p>250$</p>
+          </div>
+          <div class="add_to_cart">
+            <div class="counter">
+              <div onclick="select_items('plus')" class="plus">
+                <img src="./image/icon-plus.svg" alt="" />
+              </div>
+              <div class="price">0</div>
+              <div onclick="select_items('minus')" class="minus">
+                <img src="./image/icon-minus.svg" alt="" />
+              </div>
+            </div>
+            <button onclick="addtocart()">
+              <img src="./image/add_o_cart.svg" alt="" /> Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="model">
+      <div class="cross">
+        <!-- <img src="./image/icon-close.svg" alt=""> -->
+        <h2 class="esc">ESC</h2>
+      </div>
+
+      <div class="main_model_image">
+        <div onclick="change('prev')" class="change_icon prev">
+          <img class=" " src="./image/icon-previous.svg" alt="" />
+        </div>
+        <div onclick="change('next')" class="change_icon next">
+          <img class=" " src="./image/icon-next.svg" alt="" />
+        </div>
+        <img src="./image/image-product-1.jpg" alt="" />
+      </div>
+      <div class="all_model_images">
+        <div>
+          <img src="./image/image-product-1.jpg" alt="" class="image active" />
+        </div>
+        <div>
+          <img src="./image/image-product-2.jpg" alt="" class="image" />
+        </div>
+        <div>
+          <img src="./image/image-product-3.jpg" alt="" class="image" />
+        </div>
+        <div>
+          <img src="./image/image-product-4.jpg" alt="" class="image" />
+        </div>
+      </div>
+    </div>
+    - <
+    <script src="script.js"></script>
+  </body>
+</html>
