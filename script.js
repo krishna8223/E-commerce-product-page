@@ -15,6 +15,7 @@ const final_price = document.getElementsByClassName("final_price")[0];
 const empty = document.getElementsByClassName("empty")[0];
 const fill = document.getElementsByClassName("fill")[0];
 const links = document.getElementsByClassName("links")[0];
+const cart_item_no = document.getElementsByClassName("cart_item_no")[0];
 let image = 0;
 
 
@@ -118,11 +119,15 @@ const addtocart = () => {
   final_price.innerHTML = `$125.00 x ${price.innerHTML} <strong>$${
     125 * price.innerHTML
   }.00</strong>`;
+  cart_item_no.innerHTML = price.innerHTML
+
 };
 
 const delete_cart = () => {
   empty.style.display = "block";
   fill.style.display = "none";
+  cart_item_no.innerHTML = 0
+
 };
 
 const closeNav = () => {
