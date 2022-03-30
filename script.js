@@ -120,6 +120,7 @@ const addtocart = () => {
     125 * price.innerHTML
   }.00</strong>`;
   cart_item_no.innerHTML = price.innerHTML
+  price.innerHTML = 0
 
 };
 

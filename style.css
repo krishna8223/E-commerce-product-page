@@ -141,25 +141,27 @@ nav .cart .profile img{
     border-radius: 20px;
 }
 .cart_items{
-    box-shadow: 1px 3px 20px black;
+    box-shadow: 1px 3px 20px #c7c7c7;
     z-index: 100;
     display: none;
     left: -200px;
     margin-top: 10px;
-    border-radius: 25px;
+    border-radius: 8px;
     position: absolute;
     height: 300px;
     width: 400px;
     background-color: white;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 .cart_items h1{
     color: black;
     position: relative;
-    padding: 10px;
+    font-size: 23px;
+    padding: 24px;
+    letter-spacing: 1px;
 }
 .cart_items h1::after{
     content: '';
@@ -172,7 +174,7 @@ nav .cart .profile img{
 
 }
 .cart_items .items{
-    margin-top: 40px;
+    margin-top: 9px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -196,7 +198,6 @@ nav .cart .profile img{
 }
 .fill  .product_image{
     width: 70px;
-    /* height: 40px; */
 }
 .fill h2{
     font-size: 20px;
@@ -528,8 +529,6 @@ nav .cart .profile img{
         font-size: 80%;
     }
     .cart_items{
-        box-shadow: 1px 3px 20px black;
-        z-index: 100;
         left: unset;
         margin-top: 10px;
         border-radius: 25px;
@@ -539,11 +538,8 @@ nav .cart .profile img{
         margin: auto;
         width: clamp(50px , 90% , 400px);
         background-color: white;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        -ms-border-radius: 25px;
+        
         right: 10px;
-        -o-border-radius: 25px;
     }
 }
 
